@@ -3,7 +3,7 @@ elasticjavademo
 For Creating Indexes
 =====================
 
-
+public class ElasticSearchIndexCreate {
 	
          private static final String JDBC_DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private static final String CONNECTION_URL = "jdbc:sqlserver://ip:1433;databaseName=xyz";
@@ -13,7 +13,7 @@ For Creating Indexes
 	static  String indexName = "index";
 	static  String indexType = "type";
 
-public static void main(String args[]) {
+         public static void main(String args[]) {
  		try{
  			Class.forName(JDBC_DRIVER).newInstance();  
 			Connection conn = DriverManager.getConnection(CONNECTION_URL, USER_NAME, PASSWORD);  
@@ -41,15 +41,16 @@ public static void main(String args[]) {
  	    {
  	      e.printStackTrace();
  	    }
+       }
+
 }
-
-
 
 For Searching query:
 ============================
 
+public class ElasticSearchIndexSearch {
 	
-public static void main(String args[]) {
+        public static void main(String args[]) {
  		try{
  			
  			 Client client = NodeBuilder.nodeBuilder().local(true).settings(ImmutableSettings.settingsBuilder()
@@ -74,4 +75,5 @@ public static void main(String args[]) {
  	    {
  	      e.printStackTrace();
  	    }
- }
+        }
+}
