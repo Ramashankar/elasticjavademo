@@ -3,7 +3,7 @@ elasticjavademo
 For Creating Indexes
 =====================
 
-public class ElasticSearchBulkDataIndexDBJoin {
+public class ElasticSearchCreateIndexes{
 	
     private static final String JDBC_DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 	private static final String CONNECTION_URL = "jdbc:sqlserver://ip:1433;databaseName=xyz";
@@ -47,7 +47,7 @@ public class ElasticSearchBulkDataIndexDBJoin {
 
 For Searching query:
 ============================
-public class ElasticSearchBulkDataIndexDBJoinSearch {
+public class ElasticSearchIndexSearch {
 	
  	public static void main(String args[]) {
  		try{
